@@ -5,13 +5,16 @@
 }
 
 body {
-  max-width: 1000px;
+  max-width: 60rem;
   margin: auto;
+  font-size: 20px;
+  background-color: black;
+  color:antiquewhite;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 2.5rem;
 }
 
 .brand-container {
@@ -32,6 +35,6 @@ body {
 }
 
 a {
-  color: black;
+  color: antiquewhite;
   text-decoration: none;
 }
