@@ -3,3 +3,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  max-width: 1000px;
+  margin: auto;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
