@@ -6,7 +6,7 @@
 
 body {
   font-size: 20px;
-  background-color: blue;
+  background-color: darkgray;
   color:white;
 }
 
@@ -14,21 +14,17 @@ header {
   display:flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
-  min-height: 5rem;
-  border: 2px solid green;
-
+  min-height: 70px;
 }
 
 .container {
   width: 90%;
   max-width: 60rem;
   margin: auto;
-  border: 2px solid purple;
 }
 
 .nav-brand {
   font-size: 2rem;
-  margin-right: 15rem;
 }
 
 .nav-bar {
@@ -43,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 3.5rem;
+  gap: 3rem;
 }
 
 .nav-item {
@@ -62,4 +58,58 @@ a {
 
 .nav-link:hover {
   color: blue;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width:768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transition: 0.5s;
+    width: 100%;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+  }
 }
