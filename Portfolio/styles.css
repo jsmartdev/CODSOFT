@@ -5,36 +5,8 @@
 }
 
 body {
-  max-width: 60rem;
   margin: auto;
   font-size: 20px;
   background-color: black;
-  color:antiquewhite;
-}
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  padding: 2.5rem;
-}
-
-.brand-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item {
-  display: inline;
-  margin-right: 20px;
-}
-
-a {
-  color: antiquewhite;
-  text-decoration: none;
+  color:white;
 }
