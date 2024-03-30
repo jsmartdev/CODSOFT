@@ -1,3 +1,8 @@
+:root {
+  --global-width: 60rem;
+  --tinted-glass: rgba(0, 0, 0, 0.8);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,19 +11,23 @@
 
 body {
   font-size: 20px;
-  background-color: darkgray;
+  background-color: blue;
   color:white;
 }
 
 header {
   display:flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: var(--tinted-glass);
+  
   min-height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 60rem;
   margin: auto;
 }
@@ -31,6 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(8px);
   padding: 0 1.5rem;
   min-height: 5rem;
 }
@@ -57,7 +67,7 @@ a {
 }
 
 .nav-link:hover {
-  color: blue;
+  color: purple;
 }
 
 .hamburger-menu {
@@ -100,11 +110,19 @@ a {
     gap: 0;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
     text-align: center;
     transition: 0.5s;
     width: 100%;
+    z-index: 999;
   }
 
+  .noggin.active {
+    min-height: 270px;
+    transition: 0.5s ease-in-out;
+  }
+
+  
   .nav-menu.active {
     left: 0;
   }
@@ -112,4 +130,21 @@ a {
   .nav-item {
     margin: 20px 0;
   }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -2;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 1.5rem;
+  width: 60rem;
 }
