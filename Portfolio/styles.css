@@ -115,6 +115,47 @@ nav-bar.active {
   background-color: white;
 }
 
+
+
+main {
+  display: flex;
+  background-color: #1b2b5b;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 80px;
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  max-width: 40rem;
+}
+
+.traits {
+  list-style-type: none;
+  margin-right: 0.5rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid white;
+  border-radius: 18px;
+  padding: 6px 7px;
+  font-size: 1.25rem;
+}
+
 @media(min-width:768px) {
   
   .hamburger-menu {
@@ -135,44 +176,12 @@ nav-bar.active {
   .nav-item {
     font-size: 1.5rem;
   }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
 } 
-
-main {
-  display: flex;
-  background-color: #1b2b5b;
-}
-
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: 80px;
-  padding: 1rem;
-  
-}
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-  max-width: 40rem;
-}
-
-.traits {
-  list-style-type: none;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-  border: 2px solid white;
-  border-radius: 20px;
-  padding: 7px;
-  font-size: 1.25rem;
-}
