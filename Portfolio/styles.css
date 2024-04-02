@@ -148,7 +148,7 @@ main {
   align-items: flex-start;
   flex-direction: column;
   margin-top: 80px;
-  padding: 1.5rem;
+  padding: 1rem;
   
 }
 
@@ -160,7 +160,19 @@ h2 {
   font-size: 3rem;
 }
 
-h3 {
+ul {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 2rem;
   max-width: 40rem;
+}
+
+.traits {
+  list-style-type: none;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 7px;
+  font-size: 1.25rem;
 }
