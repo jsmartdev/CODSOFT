@@ -26,7 +26,6 @@ header {
 
 .container {
   width: 100%;
-  max-width: 60rem;
   margin: auto;
   z-index: 999;
 }
@@ -137,8 +136,6 @@ nav-bar.active {
 
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #1a1a1a;
 }
 
@@ -149,9 +146,17 @@ main {
   flex-direction: column;
   margin-top: 80px;
   padding: 1.5rem;
-  width: 60rem;
+  
 }
 
 h1 {
   font-size: 3rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  max-width: 40rem;;
 }
