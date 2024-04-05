@@ -8,6 +8,7 @@ body {
   font-size: 20px;
   color:white;
   width: 100%;
+  font-family: "Inconsolata", sans-serif;
 }
 
 header {
@@ -29,14 +30,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
   min-height: 6rem;
   width: 100%;
 }
 
 .nav-brand {
   font-size: 2rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 .nav-menu {
@@ -103,6 +104,7 @@ header {
 
 .main {
   display: flex;
+  flex-direction: column;
   background-color: #1b2b5b;
   width: 100%;
   margin: auto;
@@ -110,32 +112,53 @@ header {
 
 .hero {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   margin-top: 80px;
-  padding: 2rem 2rem 0rem 2rem;
+  padding: 2rem 1rem 0rem 1rem;
   width: 100%;
+}
+
+.hero-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.hero-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .hero-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
-h1 {
-  font-size: 3rem;
+.hero-image {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
-h2 {
-  font-size: 2.5rem;
+.headshot {
+  border-radius: 50%;
+  width: 95%;
+  max-width: 30rem;
 }
 
 .traitsList {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  margin-top: 1rem;
   max-width: 40rem;
 }
 
@@ -144,20 +167,9 @@ h2 {
   margin-right: 0.5rem;
   margin-bottom: 0.75rem;
   border: 1px solid white;
-  border-radius: 18px;
-  padding: 6px 5px;
-  font-size: 1.25rem;
-}
-
-.hero-image {
-  display: flex;
-  justify-content: center;
-  padding: 3rem 0rem 3rem 0rem;
-}
-
-.headshot {
-  border-radius: 50%;
-  width: 90%;
+  border-radius: 12px;
+  padding: 5px 5px;
+  font-size: 1rem;
 }
 
 @media(min-width: 768px) {
@@ -182,18 +194,32 @@ h2 {
   }
 
   .nav-brand {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
 
   h1 {
-    font-size: 4rem;
+    padding-right: 1rem;
   }
 
-  h2 {
-    font-size: 3rem;
+  .hero {
+    flex-direction: row;
   }
 
   .headshot {
-    width: 80%;
+    max-width: 25rem;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+
+  .hero-headline {
+    order: 2;
+    margin-left: 1.5rem;
   }
 } 
+
+@media(min-width: 900px) {
+  
+  
+}
