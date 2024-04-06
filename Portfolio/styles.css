@@ -13,6 +13,7 @@
 
 body {
   font-size: 20px;
+  background-color: var(--grey-color);
   color: var(--offwhite-color);
   width: 100%;
   font-family: "Montserrat", sans-serif;
@@ -30,6 +31,7 @@ header {
 
 .container {
   width: 100%;
+  max-width: 65rem;
   margin: auto;
 }
 
@@ -40,11 +42,10 @@ header {
   align-items: center;
   padding: 0 1rem;
   min-height: 6rem;
-  width: 100%;
 }
 
 .nav-brand {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-right: 2rem;
 }
 
@@ -115,6 +116,7 @@ header {
   flex-direction: column;
   background-color: var(--grey-color);
   width: 100%;
+  max-width: 65rem;
   margin: auto;
 }
 
@@ -123,14 +125,14 @@ header {
   flex-direction: column;
   justify-content: center;
   margin-top: 80px;
-  padding: 2rem 1rem 0rem 1rem;
+  padding: 2rem 1rem 2rem 1rem;
   width: 100%;
 }
 
 .hero-title {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   font-size: 2rem;
   font-weight: 300;
   margin-top: 1rem;
@@ -182,6 +184,48 @@ header {
   font-size: 1rem;
 }
 
+.title-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h2 {
+  font-weight: 200;
+  margin-left: 1rem;;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 65rem;
+}
+
+.title-container {
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.tech-icon {
+  margin: 0.6rem;
+}
+
 @media(min-width: 768px) {
   
   .hamburger-menu {
@@ -196,7 +240,6 @@ header {
     align-items: center;
     flex-direction: row;
     gap: 3rem;
-    color:antiquewhite;
   }
 
   h1 {
@@ -218,4 +261,5 @@ header {
   .hero-headline {
     order: 2;
   }
+
 } 
