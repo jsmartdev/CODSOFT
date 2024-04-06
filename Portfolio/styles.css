@@ -287,7 +287,7 @@ h2 {
     gap: 3rem;
   }
 
-  h1 {
+  /*h1 {
     padding-right: 1rem;
   }
 
@@ -305,6 +305,17 @@ h2 {
 
   .hero-headline {
     order: 2;
+  }*/
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
+
+  .card-container {
+    width: 40%;
+  }
+
+  
 
 } 
