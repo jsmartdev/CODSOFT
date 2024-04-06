@@ -226,6 +226,25 @@ h2 {
   margin: 0.6rem;
 }
 
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25rem;
+}
+
+.icon-text {
+  opacity: 0;
+  font-size: 1rem;
+  color: var(--teal-color);
+  transition: 0.6s ease;
+}
+
+.icon-container:hover .icon-text {
+  opacity: 1;
+}
+
 @media(min-width: 768px) {
   
   .hamburger-menu {
@@ -260,6 +279,10 @@ h2 {
 
   .hero-headline {
     order: 2;
+  }
+
+  .tech-container {
+    font-size: 3rem;
   }
 
 } 
