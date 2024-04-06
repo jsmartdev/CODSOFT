@@ -31,7 +31,6 @@ header {
 
 .container {
   width: 100%;
-  max-width: 65rem;
   margin: auto;
 }
 
@@ -115,7 +114,6 @@ header {
   flex-direction: column;
   background-color: var(--grey-color);
   width: 100%;
-  max-width: 65rem;
   margin: auto;
 }
 
@@ -161,7 +159,7 @@ header {
 .headshot {
   border-radius: 50%;
   width: 95%;
-  max-width: 40rem;
+  max-width: 50rem;
   min-width: 20rem;
 }
 
@@ -205,7 +203,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 65rem;
 }
 
 .title-container {
@@ -254,6 +251,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .card-container {
@@ -414,5 +412,30 @@ h2 {
 
   .icon-text {
     font-size: 1rem;
+  }
+}
+
+@media(min-width: 1080px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-image {
+    order: 1;
+    width: 90%;
+  }
+
+  .hero-headline {
+    order: 2;
+  }
+
+  .tech-icon {
+    font-size: 5rem;
+  }
+}
+
+@media(min-width: 1300px) {
+  .hero-title {
+    font-size: 5rem;
   }
 }
