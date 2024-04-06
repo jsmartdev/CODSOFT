@@ -190,8 +190,8 @@ header {
   flex-wrap: wrap;
 }
 
-h2 {
-  font-size: 2rem;
+.section-header {
+  font-size: 1.25rem;
   font-weight: 300;
   margin-top: 2rem;
   margin-left: 1rem;
@@ -232,7 +232,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0
+  padding: 0;
 }
 
 .icon-text {
@@ -353,12 +353,6 @@ h2 {
   font-size: 1rem;
 }
 
-@media(min-width: 357px) {
-  
-  
-
-}
-
 @media(min-width: 576px) {
   
   .hero-title {
@@ -381,6 +375,10 @@ h2 {
 }
 
 @media(min-width: 768px) {
+
+  .section-header {
+    font-size: 2rem;
+  }
   
   .hamburger-menu {
     display: none;
@@ -394,6 +392,10 @@ h2 {
     align-items: center;
     flex-direction: row;
     gap: 3rem;
+  }
+
+  .tech-icon {
+    font-size: 3rem;
   }
 
 } 
@@ -413,7 +415,7 @@ h2 {
   }
 }
 
-@media(min-width: 1300px) {
+@media(min-width: 1280px) {
   .hero-title {
     font-size: 5rem;
   }
