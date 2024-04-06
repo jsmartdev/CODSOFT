@@ -295,6 +295,31 @@ h2 {
   color: var(--teal-color)
 }
 
+.socials-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.x-logo {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.linkedin-logo {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.github-logo {
+  width: 3rem;
+  margin: 1rem;
+}
+
+.resume-logo {
+  width: 3rem;
+  margin: 1rem;
+}
+
 @media(min-width: 768px) {
   
   .hamburger-menu {
