@@ -278,45 +278,26 @@ h2 {
   margin: 1rem 2rem 1rem 2rem;
 }
 
-.email {
+.email, .phone, .resume {
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
   transition: 0.6s ease;
+
 }
 
-.email:hover {
-  color: var(--teal-color)
-}
-
-.phone {
-  transition: 0.6s ease;
-}
-
-.phone:hover {
+.email:hover, .phone:hover, .resume:hover {
   color: var(--teal-color)
 }
 
 .socials-container {
   display: flex;
   justify-content: flex-start;
+  width: 100%;
 }
 
-.x-logo {
-  width: 3rem;
-  margin: 1rem;
-}
-
-.linkedin-logo {
-  width: 3rem;
-  margin: 1rem;
-}
-
-.github-logo {
-  width: 3rem;
-  margin: 1rem;
-}
-
-.resume-logo {
-  width: 3rem;
+.logo {
+  width: 2.5rem;
   margin: 1rem;
 }
 
