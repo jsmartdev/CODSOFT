@@ -23,12 +23,9 @@ body {
 .box {
   border: 1px solid red;
   fill: blue;
-  width: 12rem;
+  width: 15rem;
 }
 
-.icon {
-  fill: blue;
-}
 .nav-list {
   display: none;
 }
