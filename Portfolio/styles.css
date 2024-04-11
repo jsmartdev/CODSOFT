@@ -110,11 +110,7 @@ header {
   background-color: var(--offwhite-color);
 }
 
-.page-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.page {
   position: relative;
 }
 
