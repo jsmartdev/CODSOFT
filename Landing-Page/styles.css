@@ -9,40 +9,11 @@ body {
   font-size: 20px;
 }
 
-.header {
-  width: 100%;
+.logo {
+  width: 10rem;
+  border: 1px solid white;
+  fill:black;
 }
 
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
 
-.box {
-  border: 1px solid red;
-  fill: blue;
-  width: 15rem;
-}
 
-.nav-list {
-  display: none;
-}
-
-.hamburger-menu {
-  display: block;
-  border: 2px solid #394149;
-  border-radius: 4px;
-  padding: 0.25rem;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin: 4px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #394149;
-}
