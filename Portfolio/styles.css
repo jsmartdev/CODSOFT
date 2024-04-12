@@ -110,9 +110,6 @@ header {
   background-color: var(--offwhite-color);
 }
 
-
-
-
 .main {
   display: flex;
   width: 100%;
@@ -129,7 +126,6 @@ header {
 .section {
   width: 100%;
   max-width: 99rem;
-  padding: 1rem;
 }
 
 .column {
@@ -141,6 +137,7 @@ header {
 
 .hero {
   margin-top: 6rem;
+  padding: 2rem 1rem 2rem 1rem;
 }
 
 .hero-title {
@@ -159,6 +156,7 @@ header {
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 .hero-text {
@@ -214,6 +212,10 @@ header {
   color: var(--teal-color)
 }
 
+.tech {
+  padding: 2rem 1rem 0rem 1rem;
+}
+
 .tech-container {
   display: flex;
   justify-content: center;
@@ -252,6 +254,10 @@ header {
   opacity: 1;
 }
 
+.projects {
+  padding: 0rem 1rem 2rem 1rem;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
@@ -263,7 +269,7 @@ header {
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 90%;
   max-width: 22rem;
   border-radius: 1rem;
   background-color: var(--navy-color);
@@ -316,12 +322,16 @@ header {
   background-color: var(--teal-color);
 }
 
+.contact {
+  padding: 0rem 1rem 2rem 1rem;
+}
+
 .contacts-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 2rem 1rem 6rem 1rem;
+  margin: 2rem 1rem 2rem 1rem;
 }
 
 .email, .phone, .resume {
@@ -342,8 +352,8 @@ header {
 .socials-container {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
-  margin-top: 1rem;
+  align-items: center;
+  width: 50%;
 }
 
 .contact-icon {
@@ -365,11 +375,31 @@ header {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;  
-  padding: 1rem;      
+  max-width: 95rem;
+  height: 3rem;  
+  padding: 0rem 0rem 0rem 0rem;  
+
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.copyright-icon {
+  width: 1.25rem;
+}
+
+.copyright-text {
+  font-size: 1rem;
 }
 
 @media(min-width: 576px) {
@@ -393,6 +423,7 @@ header {
     width: 45%;
   }
 
+  
 }
 
 @media(min-width: 768px) {
@@ -419,6 +450,10 @@ header {
     font-size: 3rem;
   }
 
+  .contact-text {
+    font-size: 1.5rem;
+  }
+
 } 
 
 @media(min-width: 1024px) {
@@ -439,6 +474,7 @@ header {
   .icon-text {
     font-size: 1rem;
   }
+
 }
 
 @media(min-width: 1280px) {
@@ -466,6 +502,11 @@ header {
   .nav-item {
     font-size: 1.5rem;
   }
+
+  .section-header {
+    font-size: 2.5rem;
+  }
+
 }
 
 @media(min-width: 1600px) {
@@ -489,4 +530,5 @@ header {
   .tech-icon {
     font-size: 5rem;
   }
+
 }
