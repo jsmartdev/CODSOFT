@@ -17,9 +17,9 @@ body {
   font-size: 20px;
   background-color: var(--grey-color);
   color: var(--offwhite-color);
-  width: 100%;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  width: 100%;
 }
 
 header {
@@ -110,17 +110,20 @@ header {
   background-color: var(--offwhite-color);
 }
 
-.page {
-  position: relative;
-}
+
+
 
 .main {
   display: flex;
-  
+  width: 100%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: var(--grey-color);
-  width: 100%;
+}
+
+.page {
+  position: relative;
 }
 
 .section {
@@ -175,7 +178,6 @@ header {
   border-radius: 50%;
   width: 95%;
   max-width: 60rem;
-  min-width: 20rem;
 }
 
 .traitsList {
@@ -224,7 +226,7 @@ header {
 
 .tech-icon {
   font-size: 2rem;
-  margin: 0rem 1rem 0.5rem 1rem;
+  margin: 0rem 0.5rem 0.5rem 0.5rem;
 }
 
 .icon-text {
@@ -261,7 +263,8 @@ header {
 .card-container {
   display: flex;
   flex-direction: column;
-  max-width: 26rem;
+  width: 40%;
+  max-width: 22rem;
   border-radius: 1rem;
   background-color: var(--navy-color);
   margin-bottom: 2rem;
@@ -318,7 +321,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 2rem rem 10rem 1rem;
+  margin: 2rem 1rem 6rem 1rem;
 }
 
 .email, .phone, .resume {
