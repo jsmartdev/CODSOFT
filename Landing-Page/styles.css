@@ -30,7 +30,7 @@ body {
 .pricing-card-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
 }
 
 .card-included-list {
