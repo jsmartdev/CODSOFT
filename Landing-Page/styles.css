@@ -15,5 +15,18 @@ body {
   fill:black;
 }
 
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-wide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 
