@@ -15,8 +15,13 @@ body {
   fill: grey;
 }
 
+.hero-image {
+  width: 40rem;
+}
+
 .card-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -29,8 +34,9 @@ body {
 
 .pricing-card-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: space-between;
+  align-items: center;
 }
 
 .card-included-list {
