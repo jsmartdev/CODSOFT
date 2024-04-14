@@ -12,7 +12,7 @@ body {
 .logo {
   width: 10rem;
   border: 1px solid white;
-  fill:black;
+  fill: grey;
 }
 
 .card-container {
