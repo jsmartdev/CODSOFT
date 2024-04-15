@@ -1,3 +1,86 @@
+:root {
+  --dark-blue: #355070;
+  --violet: #edf2f4;
+  --violet-red: #8d99ae;
+  --red: #E56B6F;
+  --beige: #EAAC8B;
+  --sky-blue: #caf0f8;
+
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -26,12 +109,13 @@ main {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  background-color: var(--dark-blue);
+  padding: 2rem;
 }
 
 .logo {
   width: 10rem;
-  border: 1px solid white;
-  fill: grey;
+  fill: var(--violet);
 }
 
 .hero {
@@ -40,6 +124,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  color: var(--dark-blue);
 }
 .hero-container {
   display: flex;
@@ -47,12 +132,15 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 1rem;
+  background-color: var(--sky-blue);
 }
 
 .hero-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .hero-image {
@@ -60,11 +148,29 @@ main {
   padding: 1rem;
 }
 
+.headline-sub-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.headline-sub {
+  background-color: var(--dark-blue);
+  color: var(--violet);
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+.about {
+  background-color: var(--violet);
+}
+
 .cards-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--mint-cream);
 }
 
 .card {
@@ -72,15 +178,35 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  padding: 1rem;
-  background-color: lightgray;
+  width: 70%;
+  height: 20rem;
+  padding: 2rem;
   border-radius: 20px;
   margin: 1rem;
+  background-color: var(--dark-blue);
+  color: var(--violet);
 }
 
 .card-icon {
   width: 3rem;
+  margin: 0.5rem;
+}
+
+.card-headline {
+  color: var(--violet);
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.analytics{
+  background-color: var(--violet);
 }
 
 .analytics-image-container {
@@ -101,6 +227,56 @@ main {
   align-items: center;
 }
 
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--sky-blue);
+}
+
+.clients-headline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  color: var(--anti-flash-white);
+}
+
+.clients-headline {
+  color: var(--dark-blue);
+}
+
+.clients-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.client-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-headline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
 .pricing-card-container {
   display: flex;
   flex-direction: column;
@@ -110,6 +286,11 @@ main {
 
 .card-included-list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem 1rem 0rem;
 }
 
 
