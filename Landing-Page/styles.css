@@ -163,6 +163,7 @@ main {
 
 .about {
   background-color: var(--violet);
+  width: 100%;
 }
 
 .cards-container {
@@ -178,7 +179,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 80%;
   padding: 2rem;
   border-radius: 20px;
   margin: 1rem;
@@ -206,6 +207,7 @@ main {
 
 .analytics{
   background-color: var(--violet);
+  width: 100%;
 }
 
 .analytics-image-container {
@@ -262,6 +264,10 @@ main {
   align-items: center;
 }
 
+.pricing {
+  width: 100%;
+}
+
 .pricing-headline {
   display: flex;
   flex-direction: column;
@@ -290,6 +296,13 @@ main {
   justify-content: center;
   align-items: center;
   padding: 1rem 0rem 1rem 0rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
 }
 
 
