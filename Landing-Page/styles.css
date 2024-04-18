@@ -113,8 +113,14 @@ main {
   padding: 2rem;
 }
 
-.logo {
+.main-logo {
   width: 10rem;
+  fill: var(--violet);
+}
+
+.logo {
+  width: 8rem;
+  height: 4rem;
   fill: var(--violet);
 }
 
@@ -132,8 +138,10 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem 8rem 1rem;
+  margin-bottom: -6rem;
   background-color: var(--sky-blue);
+  z-index: 1;
 }
 
 .hero-image-container {
@@ -185,6 +193,7 @@ main {
   margin: 1rem;
   background-color: var(--dark-blue);
   color: var(--violet);
+  z-index: 10;
 }
 
 .card-icon {
@@ -235,6 +244,9 @@ main {
   align-items: center;
   width: 100%;
   background-color: var(--sky-blue);
+  margin-top: -6rem;
+  padding-top: 10rem;
+  z-index: 1;
 }
 
 .clients-headline-container {
@@ -262,9 +274,11 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 5%;
 }
 
 .pricing {
+
   width: 100%;
 }
 
@@ -273,13 +287,15 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--dark-blue);
+  padding: 1rem;
 }
 
 .pricing-paragraph {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 6rem;
 }
 
 .pricing-card-container {
@@ -300,10 +316,59 @@ main {
 
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:100%;
 }
 
+.footer-logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
 
+.footer-logo {
+  width: 10rem;
+}
+
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.vancouver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.berlin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
 
