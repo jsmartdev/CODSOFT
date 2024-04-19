@@ -104,25 +104,34 @@ main {
   width: 100%;
 }
 
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
 .logo-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-color: var(--dark-blue);
-  padding: 2rem;
 }
 
 .main-logo {
   width: 10rem;
-  fill: var(--violet);
-}
+  fill: var(--dark-blue);
+} 
 
-.logo {
-  width: 8rem;
-  height: 4rem;
-  fill: var(--violet);
-}
 
 .hero {
   display: flex;
@@ -130,245 +139,42 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: var(--dark-blue);
+  padding: 1rem;
 }
-.hero-container {
+
+.headline-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.headline {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--dark-blue)
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 1rem 1rem 8rem 1rem;
-  margin-bottom: -6rem;
-  background-color: var(--sky-blue);
-  z-index: 1;
-}
-
-.hero-image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
 }
 
 .hero-image {
   width: 90%;
-  padding: 1rem;
 }
 
-.headline-sub-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.headline-sub {
-  background-color: var(--dark-blue);
-  color: var(--violet);
-  padding: 0.5rem;
-  border-radius: 20px;
-}
-
-.about {
-  background-color: var(--violet);
-  width: 100%;
-}
-
-.cards-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--mint-cream);
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  padding: 2rem;
-  border-radius: 20px;
-  margin: 1rem;
-  background-color: var(--dark-blue);
-  color: var(--violet);
-  z-index: 10;
-}
-
-.card-icon {
-  width: 3rem;
-  margin: 0.5rem;
-}
-
-.card-headline {
-  color: var(--violet);
-  margin-bottom: 1rem;
-}
-
-.card-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.analytics{
-  background-color: var(--violet);
-  width: 100%;
-}
-
-.analytics-image-container {
+.sub-headline-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.analytics-image {
-  width: 90%;
+.sub-headline {
+  color: var(--dark-blue)
 }
-
-.analytics-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.clients {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: var(--sky-blue);
-  margin-top: -6rem;
-  padding-top: 10rem;
-  z-index: 1;
-}
-
-.clients-headline-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-  color: var(--anti-flash-white);
-}
-
-.clients-headline {
-  color: var(--dark-blue);
-}
-
-.clients-logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.client-logos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-}
-
-.pricing {
-
-  width: 100%;
-}
-
-.pricing-headline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--dark-blue);
-  padding: 1rem;
-}
-
-.pricing-paragraph {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 6rem;
-}
-
-.pricing-card-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card-included-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 0rem 1rem 0rem;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width:100%;
-}
-
-.footer-logo-container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-}
-
-.footer-logo {
-  width: 10rem;
-}
-
-.footer-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.address-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.vancouver {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.berlin {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.social-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-}
-
