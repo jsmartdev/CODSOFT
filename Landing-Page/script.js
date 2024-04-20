@@ -3,7 +3,7 @@ function moveElementAtBreakpoint() {
   const targetParent = document.getElementById("big-image-container");
   const firstParent = document.getElementById("image-container")
 
-  if (window.matchMedia("(min-width: 1200px)").matches) {
+  if (window.matchMedia("(min-width: 1180px)").matches) {
       // If the breakpoint is matched, move the element to the second parent
       targetParent.appendChild(elementToMove);
   } else {
