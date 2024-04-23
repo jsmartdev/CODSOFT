@@ -95,6 +95,9 @@ equals.addEventListener("click", (event) => {
       case "x":
         currentNumber = parseFloat(previousNumber) * parseFloat(currentNumber);
         break;
+        case "÷":
+        currentNumber = parseFloat(previousNumber) / parseFloat(currentNumber);
+        break;
       case "%":
           currentNumber = parseFloat(previousNumber) * parseFloat(currentNumber / 100);
           break;
